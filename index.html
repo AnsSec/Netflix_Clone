@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Home - Netflix</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon-9daf6bdb.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/index-e7de9adf.css">
+  </head>
+  <body class="font-roboto bg-[#141414]">
+    <!-- Nav Bar -->
+    <nav
+      class="px-4 fixed top-0 left-0 w-full h-[41px] box-border flex items-center justify-between md:px-[30px] lg:px-9 lg:h-[68px] xl:px-[51px]"
+      id="navBar"
+    >
+      <div class="gap-4 flex items-center">
+        <div class="md:h-5 lg:h-1/2 xl:pr-4">
+          <a href="/">
+            <img
+              class="w-11 h-4 sm:w-14 md:w-16 md:h-full cursor-pointer lg:w-[92px]"
+              src="/assets/Netflix_Logo-f9589dae.svg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="text-white">
+          <a
+            href="/"
+            class="text-[10px] cursor-pointer font-thin xl:font-semibold flex items-center lg:hidden"
+            >Browse<img class="w-5" src="/assets/dropdown-0da587f6.svg" alt=""
+          /></a>
+          <ul class="hidden lg:flex gap-3 font-thin text-xs">
+            <li>
+              <a class="hover:text-[#E5E5E5] transition duration-300" href="/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#E5E5E5] transition duration-300" href="/"
+                >Shows Tv</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#E5E5E5] transition duration-300" href="/"
+                >Movies</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#E5E5E5] transition duration-300" href="/"
+                >New & Popular</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#E5E5E5] transition duration-300" href="/"
+                >My List</a
+              >
+            </li>
+            <li>
+              <a class="hover:text-[#E5E5E5] transition duration-300" href="/"
+                >Browse by Language</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gap-3 h-full flex items-center text-center justify-center">
+        <a class="w-8 h-6 hidden cursor-pointer sm:flex" href="/"
+          ><img class="px-1" src="/assets/search-33ded959.svg" alt=""
+        /></a>
+        <a
+          class="cursor-pointer text-white font-thin xl:font-semibold text-xs hidden xl:flex"
+          href="/"
+          >Children</a
+        >
+        <a class="w-8 h-6 cursor-pointer" href="/"
+          ><img class="px-1" src="/assets/bell-93700d60.svg" alt=""
+        /></a>
+
+        <a class="cursor-pointer flex" href="/">
+          <img class="rounded" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAE+UlEQVRYw42X32scVRTHP+fMZDebbNJuEmza2jbBVtKKBQXBVsXigw99EKSI7yLFxwoiiNCXKgiCIvgi6pPaf8AnEXyqlhZBa9HSktbWQmvS/HCTdLOT3Znjw8xs7t6dbXphmHvn3vM953zPj5mRyqk7Rj4ku5sz90e+597xzvt7RZjZftijuGiNJ+gAFCruZ5j7PLtrl7A/94V9r+gFxDxDKMBy8PSBNG7FRj8ji2SK8Cw3wPXOt5wtAP2R0H8UyGihQBHNW7HjJ+aDktRxuisHBIgNtgewO4SKQGKObL/K8IGzWwKUFXYHUFNIxIHohCBXLtAEJgO4G8HsghEZbFPY8HUXhcljrQWMCIjB7KJxpwmTmuoQhxXNgVoGOwP4Z8U4/ojywUtl2gbzEYxpykwPrX7GZ2sDtissbMByDGeOlXl1l3KrbuxSaDnnwxxgUuB2w3jzYMinb01QrSivH4s48MkSkcGQQNN6Pe1JYKDsxPbPUzUOTQ+yHiW89/Uin11usa+qzMcpkGoAKlArCfxnvHZkiGpFaUYJ+/eUOX24RH3FGAvTcyqgmirorLNY5s9qCnNrxqmDIYemB4k2jEpZOXF0CJaNbWF2VtMLFWgkBiPChWsRAINlZXk15qebLRgVGlagXJ27Qu7MOkBV+OF2zL3lNuVSSs3FqxGMCk3bND4MJN2cj2GqJpw+v0Fsizyzv8R355ucWzSmqsJSGwL1qHfneXgU1g32hXBlzTj5xRJvPF/h8q0W75+L2FtT5mIINC0JGX/3bieqLWBC4caKwZrBuDJVhqUYBoqakxXMs3XL0lDcioDFBKrC9KiwFEPovE9C16sAWDWYGVMqE1BvGSsJVAIwJ8kkm5trjNeUQoH7BtODsH1fQGywEBulIDuaV0Eg0lPT9SS9EGEg6C33mqYNpmmw2k4bTGdTN+eqmSKFa1Fa82MBtG3TiDD0FPQbubcBcKVusGFQFWaGheFAMCBODMuaS5B10d82DP5NmNmhDAXC35ExomA5A2FupRUrFWdvRIU/VhJ+PjnKcFn5/Mc1vrrRhkaSpXSGlVjHzWd3BrzzcpUTL47w/S9rvHJ2lf2TAQttywwIpEtjJ9QFfT9QoCTcqyccfW6ILw8M8vFqzPU7LW7OtZirJ2y0jWpZ2D0e8vieAR7bVQLg99kmZ39tMj4R0DAIJe1WcvDMXL8Xaw8zRtrlLi0lPDGuvP10mSMzg+zdMUC1ol2icQIL9TaXrkd8e2Gdb2bbMKocLkGUEYaAPPnhvJFRbZ4p7rM8FAkwGsBiC66uJBADw8LxmrKnqgworLWMv+oJF5ey/RHhhYrQSFLl4uDLUx/Nm9vKzXVXCkscIy2zIU3X92O414abcRrDYYW9oTAepv1jPVPsh1WAMFTpm4RFYXDXjQxUFXaW4VGRzndAbOlrPMr7QlCM3b8M/a8c3xj1zpGynT8TgaCAWj/UYagF1DsKuvIg33bB+uRMB0sLnHBGGoIidlywHORhxlafbZ6OtBFtAVZUIQ/KDX+Y9fYWM8eADq1OT8/p7eAWvP1EN5kWn6ncaPdcwS9fGKik1jiHpIAVcwzr53GP7EOEI8w7Uq6k06FwaC/6D6RbrsNA9qDDntNPigwPVbspdylUcQC0F9iVEccY99+gp7qkWy4MJH015q3W/G7lrEW91symkXmiqpew4si6SZUb+j+Y7wjzSYgAMAAAAABJRU5ErkJggg==" alt="" />
+          <img class="w-5" src="/assets/dropdown-0da587f6.svg" alt="" />
+        </a>
+      </div>
+    </nav>
+
+    <!--Banner Section-->
+    <section
+      class="backgroundimg shadow-inset min-h-[239.4] bg-cover bg-no-repeat py-8 sm:h-[340px] md:h-[432px] lg:h-[576px] xl:h-[720px] 2xl:h-[100vh]"
+    >
+      <div class="pl-4 lg:pl-9 flex flex-col pt-2 lg:pt-6">
+        <div
+          class="w-32 mb-3 sm:w-[230px] md:w-[276px] lg:w-[368px] xl:w-[460.8px] 2xl:w-[552px]"
+        >
+          <img class="mb-3" src="/assets/titalLogo-92751346.png" alt="" />
+          <p
+            class="font-thin text-[4.5px] sm:text-[7.68px] md:text-[9.21px] lg:text-[12.2px] xl:text-[15.36px] 2xl:text-base text-white"
+          >
+            A fiery young man clashes with an unflinching forest officer in a
+            south Indian village where spirituality, fate and folklore rule the
+            lands.
+          </p>
+        </div>
+        <div class="mt-2 flex items-center gap-3">
+          <button
+            class="w-16 h-6 rounded flex items-center justify-center gap-1 xl:gap-2 bg-white sm:w-[84px] sm:h-7 md:w-[99px] md:h-9 xl:w-[119px] xl:h-10 2xl:w-[126px] 2xl:h-11 hover:bg-[#C7C6C8]"
+          >
+            <img
+              class="w-3 sm:w-4 md:w-5 xl:w-6"
+              src="/assets/play-932ec7bc.svg"
+              alt=""
+            />
+            <p class="text-[12px] sm:text-[13px] md:text-sm xl:text-base">
+              Play
+            </p>
+          </button>
+
+          <button
+            class="w-[84px] bg-[#6d6d6e66] h-6 rounded flex items-center justify-center gap-1 xl:gap-2 text-white sm:w-28 sm:h-7 md:w-[138px] md:h-9 xl:w-40 xl:h-10 2xl:w-40 2xl:h-11 hover:bg-[#4b4b4c66]"
+          >
+            <img
+              class="w-3 sm:w-4 md:w-5 xl:w-6 text-white"
+              src="/assets/info-a03c16b7.svg"
+              alt=""
+            />
+            <p class="text-[12px] sm:text-[13px] md:text-sm xl:text-base">
+              More info
+            </p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content carousel -->
+    <section class="flex font-ubuntu justify-center flex-col gap-8 items-center -mt-2">
+      <!-- <div class="" id="content"></div> -->
+      <div class="carousel_container">
+        <p class="title">Trending</p>
+        <div class="carousel carousel_1">
+
+        </div>
+      </div>
+
+      <div class="carousel_container">
+        <p class="title">Bingworthy TV Shows</p>
+        <div class="carousel carousel_2">
+
+        </div>
+      </div>
+
+      <div class="carousel_container">
+        <p class="title">Popular on Netflix</p>
+        <div class="carousel carousel_3">
+
+        </div>
+      </div>
+
+      <div class="carousel_container">
+        <p class="title">Top 10 Movies in India</p>
+        <div class="carousel carousel_4">
+
+        </div>
+      </div>
+
+      <div class="carousel_container">
+        <p class="title"></p>
+        <div class="carousel carousel_5">
+
+        </div>
+      </div>
+
+      <div class="carousel_container">
+        <p class="title"></p>
+        <div class="carousel carousel_6">
+
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
